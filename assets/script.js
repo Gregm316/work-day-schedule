@@ -1,8 +1,10 @@
 var today = moment();
 
+// Set current day for header
+$("#currentDay").text(moment().format("dddd, MMMM Do"));
 
 $(document).ready(function(){ 
-
+    // Changes time blocks color based on the hour
     function timeChange(){
         var currentHour = moment().hour();
         
@@ -22,6 +24,7 @@ $(document).ready(function(){
     timeChange();
     var timeInterval = setInterval(timeChange, 1000);
 
+    // Save all events in local storage
     $("#09 .description").val(localStorage.getItem("09"));
     $("#10 .description").val(localStorage.getItem("10"));
     $("#11 .description").val(localStorage.getItem("11"));
@@ -32,11 +35,9 @@ $(document).ready(function(){
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
 
-    $("#currentDay").text(moment().format("dddd, MMMM Do")); 
     $(".saveBtn").on("click", function(){
         var plannerText = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, plannerText);
-
     });
 });
