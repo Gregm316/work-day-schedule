@@ -10,7 +10,7 @@ The planner does the following:
   * The event will persist even when the page is refreshed.
 
 ## Screenshot
-![Work Day Scheduler](https://user-images.githubusercontent.com/104603148/170416551-aba4e4c4-3b10-42d7-b451-6ab445a2adca.png)
+![Work Day Scheduler (1)](https://user-images.githubusercontent.com/104603148/170516565-90ade6ec-41e4-4231-8ad3-95419f390b40.png)
 
 ## Link to Deployed Website: 
 https://gregm316.github.io/work-day-scheduler/
